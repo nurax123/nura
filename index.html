@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surprise Message & Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="button-row">
+    <button onclick="showMessage()">For Agista</button>
+    <button onclick="showGallery()">Gallery</button>
+  </div>
+
+  <div class="gallery" id="gallerySection" style="display:none;">
+    <img src="img/our.jpeg"Foto Galeri" />
+  </div>
+
+  <div class="music-section">
+    <h3>Lagu untukmu Sayang / Song for you Babe</h3>
+    <audio controls>
+      <source src="audio/Virgoun - Surat Cinta Untuk Starla A Love Letter To Starla (Official Lyric Video).mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+
+  <div class="popup" id="birthdayMessage">
+    <h2>Happy Birthday, Agista Nuraeni! 🎉💛</h2>
+    <p>
+Babe, it’s your day!! Finally! 🥳
+I just wanna say how damn lucky I am to have you in my life. Seriously, you’re not just my girlfriend—you’re my partner, my safe place, my daily dose of calm (and chaos too sometimes, let’s be real 😆).
+
+I love how you laugh, how you care, even how you get annoyed when I do dumb stuff (which is... often, I know 😂). But hey, you still stick around, and that means the world to me.
+
+You’ve got the softest heart and the strongest soul. The way you handle things, the way you treat people, the way you love—girl, you’re different. In the best way.
+
+I hope today reminds you of how loved you are—not just by me, but by everyone lucky enough to know you. You deserve all the good things, all the hugs, all the cake 🍰, and maybe a lil bit of extra attention (don’t act like you don’t love it 😜).
+
+Let’s keep growing, laughing, and doing life together. I’m here for the highs, the lows, and everything in between. You got me, always.
+
+Love you more than words (and memes) can say 🫶
+Happy birthday, my favorite human 💫
+
+– [rangga rahmat mulyana]
+
+---
+
+Selamat Ulang Tahun, Agista Nuraeni! 🎉💛
+
+Sayang, ini hari kamu!! Akhirnya juga ya! 🥳
+Aku cuma mau bilang betapa beruntungnya aku punya kamu dalam hidupku. Serius deh, kamu bukan cuma pacarku—kamu tuh partnerku, tempat ternyamanku, dan dosis ketenangan (plus kekacauan juga kadang sih, jujur aja 😆).
+
+Aku suka banget cara kamu ketawa, cara kamu peduli, bahkan saat kamu kesel karena aku ngelakuin hal bodoh (yang sering banget, aku sadar 😂). Tapi kamu tetap di sini, dan itu berarti banget buat aku.
+
+Kamu punya hati yang paling lembut dan jiwa yang paling kuat. Cara kamu ngadepin hal-hal, cara kamu memperlakukan orang lain, cara kamu mencintai—kamu tuh beda. Dalam arti yang paling baik.
+
+Aku harap hari ini bikin kamu ngerasa betapa kamu dicintai—nggak cuma sama aku, tapi juga sama semua orang yang beruntung kenal kamu. Kamu pantas dapet semua hal baik, semua pelukan, semua kue 🍰, dan mungkin sedikit perhatian lebih (nggak usah pura-pura nggak suka 😜).
+
+Yuk, terus tumbuh bareng, ketawa bareng, dan jalanin hidup bareng. Aku di sini buat semua momen—baik, buruk, dan yang di tengah-tengah. Kamu selalu punya aku.
+
+Sayang kamu lebih dari kata-kata (dan meme) yang bisa jelasin 🫶
+Selamat ulang tahun, manusia favoritku 💫
+
+– [rangga rahmat mulyana]
+    </p>
+    <button class="close-btn" onclick="hideMessage()">Tutup</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("birthdayMessage").style.display = "block";
+      document.getElementById("gallerySection").style.display = "none";
+    }
+
+    function hideMessage() {
+      document.getElementById("birthdayMessage").style.display = "none";
+    }
+
+    function showGallery() {
+      const gallery = document.getElementById("gallerySection");
+      const message = document.getElementById("birthdayMessage");
+      if (gallery.style.display === "none" || gallery.style.display === "") {
+        gallery.style.display = "block";
+        message.style.display = "none";
+      } else {
+        gallery.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
